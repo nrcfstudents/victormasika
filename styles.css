@@ -133,124 +133,153 @@ p{
     line-height: 1.6;
     margin-bottom: 15px;
 }
-/* Services Section Styling */
-.services-section {
-    padding: 60px 20px;
-    background-color: rgb(155, 155, 155);
+/* Contact Section Styling */
+.contact-section {
+    background: linear-gradient(135deg, #6dd5ed, #2193b0); /* Blue gradient background */
+    background-color: lightblue;
+    color: #fff;
+    padding: 50px;
     text-align: center;
-}
-
-.services-section h2 {
-    font-size: 2.5em;
-    margin-bottom: 40px;
-    color: #333;
-}
-
-.services-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.service-box {
-    background-color: #fff;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 300px;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.service-box img {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 20px;
-}
-
-.service-box h3 {
-    font-size: 1.5em;
-    margin-bottom: 15px;
-    color: #333;
-}
-
-.service-box p {
-    font-size: 1em;
-    color: #666;
-    line-height: 1.6;
-}
-
-.service-box:hover {
-    transform: translateY(-10px);
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-
-/* Skills & Education Section Styling */
-.skills-education-section {
-    display: flex;
-    justify-content: space-between;
-    padding: 30px;
-    background: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* Subtle gradient background */
     border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-    margin: 30px 0;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Soft shadow */
 }
 
-.skills, .education {
-    width: 48%; /* Each section takes up 48% of the width */
+.contact-info{
+    color: black;
+}
+
+.contact-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for the title */
+}
+
+.contact-section p {
+    font-size: 1.4em;
+    margin-bottom: 40px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    align-items: flex-start; /* Aligns the top of the form and info section */
+}
+
+.contact-info {
+    flex: 1; /* Takes up less space */
+    min-width: 250px; /* Ensures a minimum width */
+    max-width: 300px; /* Optional: limit the max width */
+    margin-bottom: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-info h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+.contact-card {
+    background: rgba(255, 255, 255, 0.1); /* Transparent white background */
     padding: 20px;
-    background: #fff;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Shadow for individual sections */
-    transition: transform 0.3s ease; /* Smooth hover effect */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Shadow for card effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 250px;
+    text-align: left;
 }
 
-.skills:hover, .education:hover {
+.contact-card:hover {
     transform: translateY(-10px); /* Lift on hover */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
 }
 
-.skills h2, .education h2 {
-    font-size: 28px;
-    margin-bottom: 15px;
-    color: #333; /* Dark text color */
-    border-bottom: 2px solid #4CAF50; /* Green underline for Skills */
-    padding-bottom: 10px;
-    display: inline-block;
+.contact-card .icon {
+    font-size: 1.5em; /* Adjust size for Unicode */
+    width: 24px; /* Size for SVG icons */
+    height: 24px; /* Size for SVG icons */
+    fill: #ff9800; /* Color for SVG icons */
+    color: #ff9800; /* Color for Unicode symbols */
+    margin-right: 10px;
+    vertical-align: middle;
 }
 
-.education h2 {
-    border-bottom-color: #ff9800; /* Orange underline for Education */
+.contact-card i {
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 10px;
 }
 
-.skills ul, .education ul {
-    list-style-type: none;
-    padding: 0;
+.contact-card p {
+    font-size: 1.1em;
+    margin: 0;
+    color: #fff;
 }
 
-.skills ul li, .education ul li {
-    font-size: 18px;
-    margin-bottom: 12px;
-    color: #555; /* Medium text color */
-    padding-left: 30px; /* Space for custom icons */
-    position: relative;
+.contact-card strong {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffee58; /* Yellow color for labels */
 }
 
-.skills ul li::before {
-    content: "🚀 "; /* Rocket icon for skills */
-    color: #4CAF50; /* Green color */
-    position: absolute;
-    left: 0;
-    top: 0;
-    font-size: 18px;
+.contact-form {
+    flex: 2; /* Takes up more space than contact info */
+    max-width: 800px; /* Set a larger max-width if needed */    
+    /*margin: 0 auto;*/
+    background-color: #444;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.education ul li::before {
-    content: "📚 "; /* Book icon for education */
-    color: #ff9800; /* Orange color */
-    position: absolute;
-    left: 0;
-    top: 0;
-    font-size: 18px;
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+button[type="submit"] {
+    background-color: #FFD700;
+    color: #333;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: yellowgreen;
 }
