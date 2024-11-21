@@ -1,0 +1,40 @@
+ body{
+ 	font-family: revert;
+ 	margin: 20;
+ 	padding: 30;
+ }
+ .row{
+ 	display: flex;
+ 	justify-content: space-between;
+ }
+ .facts{
+ 	font-size: 50px;
+ 	text-align: left;
+ }
+ .skills{
+ 	font-size: 50px;
+ }
+ .subjects{
+ 	font-size: 50px;
+ }
+ .about-section{
+ 	padding: 50px;
+ 	text-align: center;
+ 	background-color: darkblue;
+ 	color: white;
+ }
+ .class-container{
+ 	padding: 0 16px;
+ }
+ .column,.row{
+ 	border: 2px solid black;
+ }
+ .column{
+ 	padding: 25px;
+ 	width: 100%;
+ }
+ image{
+ 	width:50px;
+ 	height:auto;
+ }
+ 
