@@ -1,0 +1,32 @@
+body{
+	background: greenyellow;
+	margin-top: 20px;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-bottom: 20px;
+}
+.project-container {
+  display: flex;
+  align-items: center;
+  gap: 30px; /* spacing between image and text */
+  background-color: #ffffff;
+  padding: 45px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.project-image {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.project-text {
+  flex: 1; /* take the remaining space */
+}
+.nav-bar{
+	display: flex;
+	justify-content: space-between;
+}
